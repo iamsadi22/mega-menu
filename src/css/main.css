@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.site-header {
+    @apply gwpf-z-20;
+}
+
+.site-branding .custom-logo-link img {
+    @apply gwpf-w-9 gwpf-h-9;
+}
+
+/* -------main navigation-------- */
+.main-navigation ul.nav-menu {
+    @apply gwpf-flex gwpf-gap-[40px];
+}
+.main-navigation ul.nav-menu li a {
+    @apply gwpf-text-[#5B5764] gwpf-text-lg gwpf-leading-[1.5] gwpf-font-normal gwpf-tracking-[-0.36px] gwpf-flex gwpf-items-center gwpf-gap-[7px] hover:gwpf-text-primary;
+}
+
+.main-navigation ul.nav-menu li a svg {
+    @apply gwpf-hidden;
+}
+
+.main-navigation ul.nav-menu li.current-menu-item a {
+    @apply gwpf-text-primary gwpf-font-semibold;
+}
+
+.main-navigation ul.nav-menu li.current-menu-item a svg {
+    @apply gwpf-block;
+}
+
+.logo-divider {
+    background: linear-gradient(180deg, rgba(110, 66, 211, 0.00) 0%, #6E42D3 52%, rgba(110, 66, 211, 0.00) 100%);
+}
+
+/* -------secondary navigation-------- */
+.secondary-navigation ul.nav-menu li {
+    @apply gwpf-leading-[1];
+}
+.secondary-navigation ul.nav-menu li:last-child {
+    @apply gwpf-ml-auto;
+}
+.secondary-navigation ul.nav-menu li a {
+    @apply gwpf-text-[#5b5764cc] gwpf-text-base gwpf-leading-[1.5] gwpf-font-normal hover:gwpf-text-primary;
+}
+.secondary-navigation ul.nav-menu li:last-child a {
+    @apply gwpf-text-primary gwpf-text-[15px] gwpf-font-medium gwpf-underline;
+}
